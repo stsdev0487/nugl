@@ -1,0 +1,138 @@
+const types = {
+  RETAIL: 'Retail',
+  SERVICE: 'Service',
+  INFLUENCER: 'Influencer',
+  BRAND: 'Brand',
+  EVENT: 'Event',
+  PERSONAL: 'Personal',
+}
+
+export const Subtypes = [
+  {
+    type: types.RETAIL,
+    title: 'Retail Stores',
+    collection: 'listings',
+    singular: 'listing',
+    subtypes: [
+      'Dispensary',
+      'Headshop',
+      'Hydroponics & Indoor Gardening',
+      'Garden Center',
+      'General Merchandise',
+      'Restaurant',
+      'Social Club',
+      'Other Retail',
+    ],
+    channels: ['Store Front', 'Delivery', 'Online'],
+    amenities: [
+      'Accepts Credit Card',
+      'ATM',
+      'Medical',
+      'On-site Security',
+      'Recreational',
+      'Wheelchair Accessible',
+    ],
+  },
+  {
+    type: types.SERVICE,
+    title: 'Services',
+    collection: 'services',
+    singular: 'service',
+    subtypes: [
+      'Advertising',
+      'Architect',
+      'Association',
+      'Banking',
+      'Bookkeeper',
+      'Construction',
+      'Consultant',
+      'Cryptocurrency',
+      'CPA',
+      'Distributor',
+      'Doctor',
+      'Educator',
+      'Insurance',
+      'Investor',
+      'Job Staffing',
+      'Lawyer',
+      'Lobbyist',
+      'Nutraceutical',
+      'Manufacturer',
+      'Marketing',
+      'Organization',
+      'Packaging',
+      'Pharmaceutical',
+      'Public Relations',
+      'Realtor',
+      'Security',
+      'Testing Lab',
+      'Transporter',
+      'Web Developer',
+      'Other Service',
+    ],
+    channels: ['Store Front', 'Online'],
+    amenities: ['Accepts Credit Card', 'ATM', 'On-site Security'],
+  },
+  {
+    type: types.INFLUENCER,
+    title: 'Influencers',
+    collection: 'influencers',
+    singular: 'influencer',
+    subtypes: ['Artist', 'Model', 'Musician', 'Other Influencer'],
+    channels: ['Store Front', 'Delivery', 'Online'],
+    amenities: ['Accepts Credit Card'],
+  },
+  {
+    type: types.PERSONAL,
+    title: 'Personal',
+    collection: 'personals',
+    singular: 'personal',
+    subtypes: ['Artist', 'Model', 'Musician', 'Other Other'],
+    channels: ['Store Front', 'Delivery', 'Online'],
+    amenities: ['Accepts Credit Card'],
+  },
+  {
+    type: types.BRAND,
+    title: 'Brands',
+    collection: 'brands',
+    singular: 'brand',
+    subtypes: [
+      'Cannabis',
+      'Cannabis Accessory',
+      'Fertilizers & Nutrients',
+      'Greenhouses & Related Products',
+      'Grow Lights & Related Products',
+      'Grow Products & Supplies',
+      'Hydroponic Equipment & Products',
+      'Magazine',
+      'Merchandise',
+      'Seed',
+      'Other Product',
+    ],
+    channels: ['Store Front', 'Delivery', 'Online'],
+    amenities: [
+      'Accepts Credit Card',
+      'ATM',
+      'Medical',
+      'On-site Security',
+      'Recreational',
+      'Wheelchair Accessible',
+    ],
+  },
+]
+
+const nameMap = {
+  listings: types.RETAIL,
+  services: types.SERVICE,
+  influencers: types.INFLUENCER,
+  brands: types.BRAND,
+}
+
+export const getType = type => Subtypes.filter(e => e.type === type)[0]
+
+export const getTypeFromName = name =>
+  Subtypes.filter(e => e.type === nameMap[name])[0]
+
+export default {
+  ...types,
+}

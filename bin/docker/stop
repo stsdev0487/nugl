@@ -1,0 +1,2 @@
+docker stop nugl-client-running
+docker rm nugl-client-running

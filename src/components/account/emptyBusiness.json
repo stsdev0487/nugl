@@ -1,0 +1,37 @@
+{
+    "address": "",
+    "city": "",
+    "country": "",
+    "description": "",
+    "logoUrl": "https://firebasestorage.googleapis.com/v0/b/nugl-dev.appspot.com/o/nugl%2Flogo.jpg?alt=media&token=61d83825-b8ac-4be9-a467-e2f0cabdf057",
+    "bannerUrl": "https://firebasestorage.googleapis.com/v0/b/nugl-dev.appspot.com/o/nugl%2Fbanner.jpg?alt=media&token=b8135e5c-d1ef-42d8-8a62-d4d988c27c6e",
+    "formattedAddress": "",
+    "hours": {
+        "friday": {
+            "open": false
+        },
+        "monday": {
+            "open": false
+        },
+        "saturday": {
+            "open": false
+        },
+        "sunday": {
+            "open": false
+        },
+        "thursday": {
+            "open": false
+        },
+        "tuesday": {
+            "open": false
+        },
+        "wednesday": {
+            "open": false
+        }
+    },
+    "phone": "",
+    "publish": true,
+    "services": [],
+    "type": "",
+    "zip": ""
+}

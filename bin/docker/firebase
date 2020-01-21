@@ -1,0 +1,1 @@
+docker run -v `pwd`:/usr/src/client -w /usr/src/client -p 9005:9005 -u node -it nugl-client sh 

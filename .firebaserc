@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "default": "nugl-da5c2",
+    "dev": "nugl-dev"
+  },
+  "targets": {
+    "nugl-dev": {
+      "hosting": {
+        "app": [
+          "nugl-dev"
+        ]
+      }
+    },
+    "nugl-da5c2": {
+      "hosting": {
+        "app": [
+          "nugl-da5c2"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+docker commit --message "add firebase login" nugl-client-running nugl-client

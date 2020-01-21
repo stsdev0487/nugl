@@ -1,0 +1,19 @@
+
+# setup
+probably want to clear ./node_modules and ./functions/node_modules if they exist.
+bin/docker/build to create image
+bin/docker/start to create image
+bin/docker/bash to login to image
+
+# in shell
+> run `firebase login`
+> click the link, auth
+> exit
+
+# convenient
+bin/docker/commit to save your auth to your image, so you don't have to do it again
+
+# running
+bin/docker/bash
+npm run docker-build
+npm run docker-local
